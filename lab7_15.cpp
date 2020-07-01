@@ -175,4 +175,5 @@ int main()
 	{
 		mas = input_matr;
 	}
+	mas_x_y(a, mas_y(y, mas_x(a, x, mas), imin, 0), x);
 }
