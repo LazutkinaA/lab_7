@@ -152,3 +152,27 @@ void mas_x_y(int a[n][n], int y, int x[])		// Функция вывода вып
 	}
 	f.close();
 }
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int a[n][n], x[n];
+	int t, y, imin;
+	void (*mas)(int[n][n]);
+	mas = NULL;
+	y = 1;
+	imin = 0;
+	do
+	{
+		cout << "Вы хотите заполненный массив (1) или желаете заполнить его самостоятельно (0)\n";
+		cin >> t;
+	} while (t != 1 && t != 0);
+	if (t == 1)
+	{
+		mas = input_file;
+	}
+	else
+	{
+		mas = input_matr;
+	}
+}
